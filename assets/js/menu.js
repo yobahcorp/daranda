@@ -2,15 +2,13 @@ let menu = document.querySelector('.nav-links');
 let bars = document.querySelector('.bars');
 
 bars.onclick = () => {
-    let menuDisplay = menu.style.display;
-
-    if (menuDisplay == 'none') {
-        menu.style.display = 'flex';
-    }else {
+    if (menu.style.display === 'flex') {
         menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
     }
-}
+};
 
 menu.onclick = () => {
     menu.style.display = 'none';
-}
+};
